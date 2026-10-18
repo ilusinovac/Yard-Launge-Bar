@@ -1,0 +1,5 @@
+services:
+  web:
+    image: nginx:alpine
+    cpus: 0.5
+    mem_limit: 512m
