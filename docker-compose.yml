@@ -1,5 +1,13 @@
+version: "3.8"
+
 services:
   web:
     image: nginx:alpine
-    cpus: 0.5
-    mem_limit: 512m
+    container_name: yard-launge-bar
+    restart: unless-stopped
+    cpus: 0.50
+    mem_limit: 256m
+    ports:
+      - "80"
+    volumes:
+      - .:/usr/share/nginx/html:ro
